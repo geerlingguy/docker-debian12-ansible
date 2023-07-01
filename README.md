@@ -1,6 +1,6 @@
 # Debian 12 (Bookworm) Ansible Test Image
 
-[![CI](https://github.com/geerlingguy/docker-debian12-ansible/workflows/Build/badge.svg?branch=master&event=push)](https://github.com/geerlingguy/docker-debian12-ansible/actions?query=workflow%3ABuild) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-debian12-ansible)](https://hub.docker.com/r/geerlingguy/docker-debian12-ansible/)
+[![CI](https://github.com/geerlingguy/docker-debian12-ansible/workflows/Build/badge.svg?branch=main&event=push)](https://github.com/geerlingguy/docker-debian12-ansible/actions?query=workflow%3ABuild) [![Docker pulls](https://img.shields.io/docker/pulls/geerlingguy/docker-debian12-ansible)](https://hub.docker.com/r/geerlingguy/docker-debian12-ansible/)
 
 Debian 12 (Bookworm) Docker container for Ansible playbook and role testing.
 
@@ -10,13 +10,13 @@ Debian 12 (Bookworm) Docker container for Ansible playbook and role testing.
 
 ## How to Build
 
-This image is built on Docker Hub automatically any time the upstream OS container is rebuilt, and any time a commit is made or merged to the `master` branch. But if you need to build the image on your own locally, do the following:
+This image is built on Docker Hub automatically any time the upstream OS container is rebuilt, and any time a commit is made or merged to the `main` branch. But if you need to build the image on your own locally, do the following:
 
   1. [Install Docker](https://docs.docker.com/engine/installation/).
   2. `cd` into this directory.
   3. Run `docker build -t debian12-ansible .`
 
-> Note: Switch between `master` and `testing` depending on whether you want the extra testing tools present in the resulting image.
+> Note: Switch between `main` and `testing` depending on whether you want the extra testing tools present in the resulting image.
 
 ## How to Use
 

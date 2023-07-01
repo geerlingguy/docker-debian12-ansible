@@ -30,12 +30,12 @@ jobs:
       - name: Verify Ansible is accessible in the built image.
         run: docker exec --tty test-container env TERM=xterm ansible --version
 
-  # If on master branch, build and release image.
+  # If on main branch, build and release image.
   release:
     name: Release
     runs-on: ubuntu-latest
     needs: test
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - uses: actions/checkout@v2
